@@ -1,5 +1,3 @@
-# Dockerfile untuk Atariki Japan Website
-
 # Stage 1: Build the application
 FROM node:20-alpine AS builder
 
@@ -8,8 +6,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# HAPUS --only=production di sini agar devDependencies (Tailwind, PostCSS, dll) ikut terinstal
+RUN npm ci
 
 # Copy source code
 COPY . .
@@ -22,17 +20,18 @@ FROM node:20-alpine AS runner
 
 WORKDIR /app
 
-# Copy built application from builder stage
+# Set environment variables
+ENV PORT=3000
+ENV NODE_ENV=production
+
+# Copy built application dari builder stage
+# Pastikan kamu sudah mengaktifkan 'output: "standalone"' di next.config.js
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
 # Expose port
 EXPOSE 3000
-
-# Set environment variables
-ENV PORT=3000
-ENV NODE_ENV=production
 
 # Start the application
 CMD ["node", "server.js"]
