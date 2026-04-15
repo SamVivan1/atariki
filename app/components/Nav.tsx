@@ -37,7 +37,7 @@ export default function Nav() {
       >
         <div className="flex items-center justify-between px-4 py-3 sm:px-6">
           <a href="#home" className="flex items-center gap-3">
-            <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-2">
+            {/* <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-2"> */}
               <Image
                 src="/assets/logo.png"
                 alt="Atariki Japan Logo"
@@ -45,7 +45,7 @@ export default function Nav() {
                 height={36}
                 className="h-9 w-auto"
               />
-            </div>
+            {/* </div> */}
             <div>
               <div className="text-sm font-black uppercase tracking-[0.28em] text-white">
                 Atariki

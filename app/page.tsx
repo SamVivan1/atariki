@@ -39,9 +39,9 @@ export default function Home() {
             </div>
 
             <div className="mt-6 mb-6 flex items-center gap-4">
-              <div className="glass-panel rounded-2xl p-3">
+              {/* <div className="glass-panel rounded-2xl p-3"> */}
                 <Image src="/assets/logo.png" alt="Atariki Japan logo" width={54} height={54} />
-              </div>
+              {/* </div> */}
               <p className="gold-label text-xs font-semibold sm:text-sm">Atariki Japan</p>
             </div>
 
