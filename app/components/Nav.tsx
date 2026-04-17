@@ -50,7 +50,7 @@ export default function Nav() {
               <div className="text-sm font-black uppercase tracking-[0.28em] text-white">
                 Atariki
               </div>
-              <div className="text-xs tracking-[0.24em] text-[var(--accent)]">Japan</div>
+              <div className="text-xs tracking-[0.24em] text-[var(--accent)]">Nigga</div>
             </div>
           </a>
 
