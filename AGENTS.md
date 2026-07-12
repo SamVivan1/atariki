@@ -3,7 +3,7 @@
 Project Prompt: Atariki Japan Website Development
 Role: Senior Full-stack Web Developer & UI/UX Designer.
 Objective: Develop a modern, high-conversion landing page for "Atariki Japan," a Japanese restaurant. The website must reflect the brand's bold red aesthetic and premium-yet-accessible food quality.
-
+test aja
 1. Tech Stack Preferences
 Frontend: Next.js (App Router), Tailwind CSS, Framer Motion (untuk animasi).
 
