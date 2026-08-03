@@ -1,4 +1,4 @@
-# Atariki Japan Website
+# Atariki apalah Website
 
 ## Deskripsi Proyek
 
